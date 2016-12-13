@@ -15,7 +15,7 @@
 @property (assign, nonatomic) CGFloat interitemSpacing;
 @property (assign, nonatomic) CGFloat preferredMaxLayoutWidth;
 @property (assign, nonatomic) BOOL singleLine;
-@property (copy, nonatomic, nullable) void (^didTapTagAtIndex)(NSUInteger index);
+@property (copy, nonatomic, nullable) void (^didTapTagAtIndex)(NSUInteger index, SKTagView *tagView);
 
 - (void)addTag: (nonnull SKTag *)tag;
 - (void)insertTag: (nonnull SKTag *)tag atIndex:(NSUInteger)index;

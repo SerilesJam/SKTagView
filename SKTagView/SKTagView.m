@@ -156,7 +156,7 @@
 
 - (void)onTag: (UIButton *)btn {
     if (self.didTapTagAtIndex) {
-        self.didTapTagAtIndex([self.subviews indexOfObject: btn]);
+        self.didTapTagAtIndex([self.subviews indexOfObject: btn], self);
     }
 }
 
